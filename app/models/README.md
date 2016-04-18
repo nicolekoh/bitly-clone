@@ -11,3 +11,4 @@ $ rake generate:model NAME=<singular_model_name>
 
 Unlike Rails, this framework does not generate migration file automatically. Hence, you're required
 to handle your migration file separately.
+
