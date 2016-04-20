@@ -1,0 +1,30 @@
+#spacer {
+	height: 150px;
+}
+
+body {
+    background-color: #60DFE5;
+    background-image: url("../img/cat.jpg");
+    background-repeat: no-repeat;
+   	background-size: 100% 100%;
+    font-style: italic;
+    text-align: center;
+   
+}
+
+h1 {
+color: white;
+}
+
+p {
+	color:white;
+}
+
+
+#container{
+	padding-top: 60px		;
+}
+form {color: white;}
+
+a{color:white ;}
+

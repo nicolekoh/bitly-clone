@@ -1,12 +1,48 @@
-<form action="/urls" method="post">
-	Enter URL:
-	<input type="text" name="long_url" placeholder="Input your URL">
-	<input type="submit" value="Submit Your URL">
-</form>
 
 
-<p>shortened url: <%= url %></p>
 
-<a href="/count"> Show Link Count:</a<
+<!-- <div class="all"> -->
 
+	<h1> UNLEASH THE POWER OF THE LINK</h1>
+	<p> 
+		Drive app installs and re-engagement with deep linking by Bitly. 
+		<a href ="http://www.hottopic.com/product/pikachu/2015-ht-halloween-popculture-pikachu.html"> Learn More </a> 
+	</p> 
+
+	<form action="/urls" method="post">
+		Enter URL:
+		<input id = "inputone" type="text" name="long_url" placeholder="Input your URL" style="width: 400; 
+		height30;">
+		<input type="submit" value="Submit Your URL">
+	</form>
+
+	<table border="1" style ="width:80%" margin-left: auto; margin-right: auto;>
+		
+	<% if @urls %>
+		<% @urls.each do |x| %>
+			<tr>
+				<td><a href="/<%=x.short_url %>"><%=x.short_url %></a></td>
+				<td><a href="/delete/<%=x.short_url%>">delete</a></td>
+				<td><a href="/<%=x.long_url %>"><%=x.long_url %></a></td>
+				<br>
+				<td><a href="/count"> Show Link Count: <%=x.counter %></a><td>
+			</tr>
+		<% end  %>
+	<%end %>
 	
+	</table> 
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
